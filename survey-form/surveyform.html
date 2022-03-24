@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freecodecamp Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p id="one"><i>Thank you for taking the time to help us improve the platform</i></p>
+    
+    <form>
+    <div class="form-container">
+        <label for="name"><b>Name</b></label><br><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required="">
+
+        <br><br>
+        <label for="email"><b>Email</b></label><br><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required=""> 
+
+        <br><br>
+        <label for="age"><b>Age</b>(optional)</label><br><br>
+        <input type="age" id="age" name="age" placeholder="Age">
+
+        <br><br>
+        <label for="Questions:"><b>Which option best describes your current role?</b></label><br><br>
+        <select name="Questions" id="Questions1" placeholder="Select current role">
+            <option value="q1">Student</option>
+            <option value="q2">Full time job</option>
+            <option value="q3">Full time learner</option>
+			<option value="q4">Prefer not to say</option>
+			<option value="q5">Other</option>
+    
+        </select>
+
+        <p id="two"><b>Would you recommend freeCampCode to a friend?</b></p>
+        <input type="radio" id="html" name="fav_language" value="Definitely">
+        <label for="html">Definitely</label><br>
+        <input type="radio" id="css" name="fav_language" value="Maybe">
+        <label for="css">Maybe</label><br>
+        <input type="radio" id="js" name="fav_language" value="Not Sure">
+        <label for="html">Not Sure</label><br><br>
+
+
+        <label for="Questions:"><b>What is your favorite feature of freeCampCode?</b></label><br><br>
+        <select name="Questions" id="Questions2">
+            <option value="q1">Challenges</option>
+            <option value="q2">Project</option>
+            <option value="q3">Community</option>
+			<option value="q4">Opensource</option>
+        </select>
+        <br><br>
+
+        <label for="Questions3:"><b>What would you like to see improved?</b>(check all that apply)</label>
+        <br><br>
+
+        <input type="checkbox" id="number1" name="number 1" value="Frontend Project">
+        <label for="number 1">Frontend Project</label><br>
+        <input type="checkbox" id="number2" name="number 2" value="Backend Project">
+        <label for="number 2">Backend Project</label><br>
+        <input type="checkbox" id="number3" name="number 3" value="Challenges">
+        <label for="number 3">Challenges</label><br>
+        <input type="checkbox" id="number4" name="number 4" value="Data Visualization">
+        <label for="number 4"> Data visualisation </label><br>
+        <input type="checkbox" id="number5" name="number 5" value="Open Source Community">
+        <label for="number 5"> Open Source Community</label><br>
+        <input type="checkbox" id="number6" name="number 6" value="Gitter help room">
+        <label for="number 6"> Gitter help room</label><br>
+        <input type="checkbox" id="number7" name="number 7" value="Forum">
+        <label for="number 7"> Forum</label><br>
+        <input type="checkbox" id="number8" name="number 8" value="Videos">
+        <label for="number 8"> Videos</label><br>
+        <input type="checkbox" id="number9" name="number 9" value="Wiki">
+        <label for="number 9">Wiki</label><br>
+        <input type="checkbox" id="number10" name="number 10" value="City Meetups">
+        <label for="number 10"> City Meetups</label><br>
+        <input type="checkbox" id="number11" name="number 11" value="Additional Courses">
+        <label for="number 11"> Additional Courses</label><br><br>
+
+        <label for="comment"><b>Any comments or Suggestion?</b></label><br>
+        <textarea name="comment" id="" cols="40" rows="10" placeholder="Enter your comments here...."></textarea>
+
+        <br><br>
+        <input class="greenbox" type="submit" value="Submit">
+    </div>
+
+
+    </form>
+    
+</body>
