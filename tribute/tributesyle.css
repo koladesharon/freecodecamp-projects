@@ -2,13 +2,13 @@ body {
   margin: 0;
 }
 
-main {
+#main {
   background-color: #eee;
   border-radius: 5px;
   text-align: center;
 }
 
-.picture-container {
+#img-div {
   background: whitesmoke;
   width: 98%;
   margin: auto;
@@ -23,24 +23,23 @@ main h1 {
   margin-left: auto;
   margin-right: auto;
 }
-#three{
-    font-size: 1.5rem;
+#three {
+  font-size: 1.5rem;
 }
 
-li{
-    text-align: left;
-    margin: 15px 0;
+li {
+  text-align: left;
+  margin: 15px 0;
 }
 
-.list-container{
-    width: 50%;
-    margin: auto;
-
+#tribute-info {
+  width: 50%;
+  margin: auto;
 }
-blockquote{
-    width: 40%;
-    margin: auto;
+blockquote {
+  width: 40%;
+  margin: auto;
 }
-h2{
-    font-size: 20px;
+h2 {
+  font-size: 20px;
 }

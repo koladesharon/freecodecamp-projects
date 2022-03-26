@@ -13,25 +13,26 @@
 
 
 <body>
-    <h1>freeCodeCamp Survey Form</h1>
-    <p id="one"><i>Thank you for taking the time to help us improve the platform</i></p>
-    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p>
+    <br><br>
+
     <form>
-    <div class="form-container">
-        <label for="name"><b>Name</b></label><br><br>
+    <div class="survey-form">
+        <label for="name" id="name-label"><b>Name</b></label><br><br>
         <input type="text" id="name" name="name" placeholder="Enter your name" required="">
 
         <br><br>
-        <label for="email"><b>Email</b></label><br><br>
+        <label for="email" id="email-label"><b>Email</b></label><br><br>
         <input type="email" id="email" name="email" placeholder="Enter your email" required=""> 
 
         <br><br>
-        <label for="age"><b>Age</b>(optional)</label><br><br>
-        <input type="age" id="age" name="age" placeholder="Age">
+        <label for="age" id="number-label"><b>Age</b>(optional)</label><br><br>
+        <input type="age" id="number" name="age" placeholder="Age">
 
         <br><br>
         <label for="Questions:"><b>Which option best describes your current role?</b></label><br><br>
-        <select name="Questions" id="Questions1" placeholder="Select current role">
+        <select name="Questions" id="dropdown" placeholder="Select current role">
             <option value="q1">Student</option>
             <option value="q2">Full time job</option>
             <option value="q3">Full time learner</option>
@@ -50,7 +51,7 @@
 
 
         <label for="Questions:"><b>What is your favorite feature of freeCampCode?</b></label><br><br>
-        <select name="Questions" id="Questions2">
+        <select name="Questions" id="Questions1">
             <option value="q1">Challenges</option>
             <option value="q2">Project</option>
             <option value="q3">Community</option>
@@ -85,13 +86,14 @@
         <label for="number 11"> Additional Courses</label><br><br>
 
         <label for="comment"><b>Any comments or Suggestion?</b></label><br>
-        <textarea name="comment" id="" cols="40" rows="10" placeholder="Enter your comments here...."></textarea>
+        <textarea name="comment" id="comment" placeholder="Enter your comments here...."></textarea>
 
         <br><br>
-        <input class="greenbox" type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
     </div>
 
 
     </form>
     
 </body>
+</html>
