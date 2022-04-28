@@ -1,0 +1,145 @@
+body {
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+.nav-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+  gap: 1rem;
+  align-items: center;
+  padding: 0;
+  margin-top: 3px;
+  padding-right: 1rem;
+}
+.nav-items{
+    min-width: fit-content;
+}
+li {
+  list-style: none;
+}
+#details {
+  width: 40%;
+  margin: auto;
+}
+#one {
+  text-align: center;
+  margin-top: 9rem;
+}
+#input {
+  text-align: center;
+}
+#Submit {
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  color: rgb(197, 53, 53);
+  border: 1px solid rgb(197, 53, 53);
+  transition-duration: .3s;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#pen {
+  display: flex;
+  gap: 1rem;
+  width: 15rem;
+}
+#layer {
+  display: flex;
+  gap: 1rem;
+  width: 15rem;
+}
+#copy {
+  display: flex;
+  gap: 1rem;
+  width: 15rem;
+}
+.fa-solid {
+  display: flex;
+  font-size: 2em;
+  color: lightseagreen;
+}
+#logo {
+  display: flex;
+  width: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+#bar{
+    display: none;
+}
+#p{
+  padding: 3px;
+}
+#heading {
+  margin-bottom: 4rem;
+}
+#start {
+  text-align: center;
+  width: 100px;
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+  cursor: pointer;
+  color: rgb(197, 53, 53);
+  border: 1px solid rgb(197, 53, 53);
+  transition-duration: .3s;
+}
+
+#start:hover{
+    background-color: rgb(197, 53, 53);
+    color: white;
+}
+
+#email {
+  padding: 7px;
+  border: 1px solid rgb(197, 53, 53);
+  transition-duration: .3s;
+}
+
+@media only screen and (max-width:800px) {
+    #details{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    #details{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:800px) {
+    #icons{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-items{
+        display: none;
+    }
+    #bar{
+        display: block;
+    }
+    #nav{
+        justify-content: flex-end;
+    }
+}

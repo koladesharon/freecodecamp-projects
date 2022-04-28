@@ -1,0 +1,139 @@
+body{
+    box-sizing: border-box;
+    background-color: #eee;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    width: 19rem;
+}
+#header-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+#nav{
+    display: flex;
+    gap: 12rem;   
+    padding-right: 5rem;
+}
+.pre{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 5rem;
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#form{
+    text-align: center;
+}
+.fas{
+    font-size: 3em;
+    color: darkorange;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 2rem;
+}
+.work{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    gap: 4rem;
+}
+.amount{
+    display:flex;
+    width: 60%;
+    margin: auto;
+    gap:4rem;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    gap: 3rem;
+    margin: auto;
+    border-radius: 3px;
+}
+.container .box{
+    border: 1px solid black;
+    width: 20rem;
+}
+#Select{
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    margin: 15px;
+    background-color: yellow;
+    cursor: pointer;
+    color: black;
+    border: none;
+}
+#Select:hover {
+    color: black;
+    border: 1px solid;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-right: 25rem;
+}
+#span{
+    display: flex;
+    float: right;
+}
+#email{
+    padding: 0.3rem 2rem 0.3rem 0;  
+}
+#Submit{
+    background-color: yellow;
+    font-weight: 900;
+    padding: 0.3rem 2rem;
+    border: none;
+    margin-bottom: 3rem;
+}
+#Submit:hover{
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    text-align: center;
+}
+#one{
+    list-style: none;
+    padding-left: 0;
+}
+#two{
+    list-style: none;
+    padding-left: 0;
+}
+#three{
+    list-style: none;
+    padding-left: 0;
+}
+#copyright{
+    display: flex;
+    gap: 1rem;
+}

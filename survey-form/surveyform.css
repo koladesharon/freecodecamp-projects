@@ -49,28 +49,24 @@ body {
 }
 #email {
   width: 90%;
-  font-family: "Lucida Console", "Courier New", monospace;
   border-radius: 60px;
   padding: 10px;
   margin: 0px 4px 10px;
 }
 #number {
   width: 90%;
-  font-family: "Lucida Console", "Courier New", monospace;
   border-radius: 60px;
   padding: 10px;
   margin: 0px 4px 20px;
 }
 #dropdown {
   width: 90%;
-  font-family: "Lucida Console", "Courier New", monospace;
   border-radius: 60px;
   padding: 10px;
   margin: 0px 3px 20px;
 }
 #Questions1 {
   width: 90%;
-  font-family: "Lucida Console", "Courier New", monospace;
   border-radius: 60px;
   padding: 10px;
   margin: 0px 3px 20px;
