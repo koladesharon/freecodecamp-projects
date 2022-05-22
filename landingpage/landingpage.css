@@ -22,6 +22,7 @@ body{
     display: flex;
     gap: 12rem;   
     padding-right: 5rem;
+    justify-content: space-evenly;
 }
 .pre{
     display: flex;
@@ -36,6 +37,9 @@ body{
 }
 #form{
     text-align: center;
+}
+#bar{
+    display: none;
 }
 .fas{
     font-size: 3em;
@@ -121,6 +125,9 @@ li a{
 .content{
     text-align: center;
 }
+.video{
+    margin-left: 0;
+}
 #one{
     list-style: none;
     padding-left: 0;
@@ -136,4 +143,48 @@ li a{
 #copyright{
     display: flex;
     gap: 1rem;
+}
+@media only screen and (max-width:1017px){
+    #header-img{
+        width: 12rem;
+    }
+    .nav-link{
+        display: none;
+    }
+
+    #bar{
+        display: block;
+    }
+    #footer{
+        margin-right: 7rem;
+   }
+}
+@media only screen and (max-width:800px) {
+    #bar{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    #nav{
+        justify-content: flex-end;
+    }
+    #header-img{
+        width: 12rem;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #footer{
+        margin-right: 6rem;
+   }
+   @media only screen and (max-width:600px){
+   .video{
+       margin-left:6rem ;
+   }
+   #header-img{
+    width: 15rem;
+   }
+}
+
 }
