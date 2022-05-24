@@ -157,7 +157,7 @@ header{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
     gap: 2rem;
     padding: 1rem;
 }
@@ -170,6 +170,7 @@ header{
     color: white;
     font-size: 1.5rem;
     font-style: normal;
+    text-decoration-line: none;
 }
 
 .Contact h2{
@@ -188,6 +189,7 @@ header{
 
 .contactlink i{
     font-style: normal;
+    font-weight: 200;
 }
 
 footer{
@@ -235,20 +237,17 @@ footer{
     }
 }
 
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 724px) {
     .contactlink ul{
-        justify-content: space-around;
+        justify-content:space-evenly ;
     }
 }
 
 @media screen and (max-width: 561px) {
-    header{
-        width: 30.5rem;
+    #nav{
+        gap: 3rem;     
     }
-}
-
-@media screen and (max-width: 474px) {
     header{
-        width: 20.5rem;
+        position: relative;
     }
 }
