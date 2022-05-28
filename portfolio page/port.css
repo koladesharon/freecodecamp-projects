@@ -1,76 +1,78 @@
-body{
+body {
     margin: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     position: fixed;
     z-index: 25;
     width: 100%;
 }
 
-#nav{
+#nav {
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    gap: 5rem;
+    /*not necessary, 'row is the default flex direction'*/
     background-color: rgb(199, 9, 47);
-    padding:  1rem 2rem 2rem 1rem;
     margin: 0;
-    
+    padding-right: 2rem;
+    align-items: center;
+    height: 6rem;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 }
 
-#nav li{
+#nav li {
     list-style: none;
+    /*Not necessary*/
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem 0 2rem;
 }
 
-#nav a{
+#nav a {
     display: flex;
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
-        
 }
 
-#nav a:hover{
+#nav li:hover {
     background-color: #45567d;
     cursor: pointer;
-    padding: 1rem;
 }
 
-.welcome-section{
+.welcome-section {
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.952);
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
     color: white;
-
 }
 
-.welcome-section p{
+.welcome-section p {
     font-family: "Poppins", sans-serif;
-    font-style: italic;
-    color: rgb(199, 9, 47);
-    font-size: 24px;
-    font-weight: 200;
+    color: #be3144;
+    font-size: 2rem;
     text-align: center;
 }
 
-.welcome-section h1{
+.welcome-section h1 {
     font-family: "Raleway", sans-serif;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 20rem;
-    font-size: 3rem;
-    
+
+    font-size: 4rem;
 }
 
-#welcome-content{
+#welcome-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-top: 35vh;
 }
 
-.projects{
+.projects {
     background-color: #45567d;
     display: flex;
     flex-direction: column;
@@ -78,55 +80,64 @@ header{
     padding: 1rem 2rem;
 }
 
-.projects h2{
+.projects h2 {
     font-family: "Raleway", sans-serif;
     text-align: center;
     font-size: 2.5rem;
-    color:#f0f0f0;
+    color: #f0f0f0;
+    padding-bottom: 2rem;
 }
 
-.projects .project-content{
+.projects .project-content {
     display: flex;
     justify-content: center;
-    gap: 0.1rem;
+    gap: 1rem;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
-.projects img{
-    width: 20rem;
-    height: 21rem;
+.projects img {
+    width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.projects #project-item:hover{
+.project-content #project-item {
+    position: relative;
+    width: 25rem;
+    height: 23rem;
+    margin: 0;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    background-color: red;
+}
+
+.projects #project-item:hover {
     cursor: pointer;
-} 
+}
 
 .projects #before-after {
     display: none;
-    font-size: 1.5rem;
     color: rgb(199, 9, 47);
+    font-weight: bolder;
 }
 
 .projects figcaption:hover #before-after {
     display: inline-block;
 }
 
-.projects figcaption{
+.projects figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 92%;
     background-color: #303841;
     color: #f0f0f0;
     padding: 1rem;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    margin-top: 1rem;
+    font-size: 1.1rem;
 }
 
-.projects #show{
+.projects #show {
     font-family: "Poppins", sans-serif;
     background-color: #303841;
     color: white;
@@ -135,14 +146,18 @@ header{
     margin-top: 2rem;
     text-decoration: none;
     border-radius: 3px;
-    transition-duration: .3s;
+    transition: all 0.6s cubic-bezier(0.39, 0.5, 0.15, 1.36);
 }
 
-.projects #show :hover {
+.projects #show:hover .fa {
+    padding-left: 5px;
+}
+
+.projects #show:hover {
     background-color: rgb(199, 9, 47);
 }
 
-.Contact{
+.Contact {
     background-color: #303841;
     font-family: "Raleway", sans-serif;
     color: #f0f0f0;
@@ -150,56 +165,63 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border-bottom: 5px solid rgb(199, 9, 47);;
+    border-bottom: 5px solid rgb(199, 9, 47);
 }
- 
-.contactlink ul{
+
+.contactlink ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     gap: 2rem;
     width: 100%;
     flex-wrap: wrap;
     padding: 0;
 }
 
-.contactlink{
+.contactlink {
     text-decoration: none;
 }
 
-.contactlink a{
+.contactlink li {
+    transition: transform 0.3s ease-in-out;
+}
+
+.contactlink li:hover {
+    transform: translateY(9px);
+}
+
+.contactlink a {
     color: white;
     font-size: 1.5rem;
     font-style: normal;
     text-decoration-line: none;
 }
 
-.Contact h2{
+.Contact h2 {
     font-size: 3rem;
     margin-bottom: 0;
     text-align: center;
     margin-top: 13rem;
-} 
+}
 
-.Contact #one{
+.Contact #one {
     font-size: 1rem;
     font-style: italic;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.contactlink i{
+.contactlink i {
     font-style: normal;
     font-weight: 200;
 }
 
-footer{
+footer {
     background-color: #303841;
-   
 }
 
-footer #ending{
+footer #ending {
     flex-direction: row;
     display: flex;
     font-size: 1rem;
@@ -211,56 +233,58 @@ footer #ending{
 }
 
 @media screen and (max-width: 510px) {
-    .welcome-section h1{
+    .welcome-section h1 {
         font-size: 2rem;
     }
+
     .welcome-section p {
         font-size: 16px;
     }
 }
 
 @media screen and (max-width: 385px) {
-    .welcome-section h1{
+    .welcome-section h1 {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 776px) {
-    .projects h2{
+    .projects h2 {
         font-size: 1.7rem;
     }
 }
 
 @media screen and (max-width: 481px) {
-    .Contact h2{
+    .Contact h2 {
         font-size: 2rem;
-    }   
+    }
 }
 
 @media screen and (max-width: 430px) {
-    .projects h2{
+    .projects h2 {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 724px) {
-    .contactlink ul{
-        justify-content:space-evenly ;
-        width: 80%
+    .contactlink ul {
+        justify-content: space-evenly;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 561px) {
-    #nav{
-        gap: 3rem;     
+    #nav {
+        gap: 3rem;
     }
-    header{
+
+    header {
         position: relative;
     }
 }
 
 @media screen and (max-width: 797px) {
-    .contactlink ul{
+    .contactlink ul {
         width: 70%;
         justify-content: center;
         margin: auto;
@@ -268,16 +292,14 @@ footer #ending{
 }
 
 @media screen and (max-width: 766px) {
-    footer #ending{
+    footer #ending {
         flex-direction: column;
     }
 }
 
 @media screen and (max-width: 546px) {
-    footer #ending{
+    footer #ending {
         height: 7rem;
-        font-size: 14px;        
-
+        font-size: 14px;
     }
 }
-
